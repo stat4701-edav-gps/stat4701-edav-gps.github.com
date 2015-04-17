@@ -5,7 +5,7 @@ gems:
   - jemoji
   
 # Site settings
-title: "Mediator"
+title: "Using NYC Building Data (2013) to predict multipath GPS error in NYC Taxi Data (2013)"
 description: > # this means to ignore newlines until "email:"
    A Jekyll theme - Medium inspired
 
