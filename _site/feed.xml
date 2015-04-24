@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Using NYC Building Data (2013) to predict multipath GPS error in NYC Taxi Data (2013)</title>
+    <description>A Jekyll theme - Medium inspired
+</description>
+    <link>http://stat4701-edav-gps.github.io//</link>
+    <atom:link href="http://stat4701-edav-gps.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 23 Apr 2015 21:38:55 -0400</pubDate>
+    <lastBuildDate>Thu, 23 Apr 2015 21:38:55 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+  </channel>
+</rss>
