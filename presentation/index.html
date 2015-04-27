@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Using NYC Building Data (2013) to predict multipath GPS error in NYC Taxi Data (2013)</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -40,6 +40,72 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+				<section>
+					<h2>Using NYC Building Data (2013) to predict multipath GPS error in NYC Taxi Data (2013)</h2>
+					
+					<p>
+					By Team <a href="https://github.com/stat4701-edav-gps">REDS (link to our GitHub Organization)</a>
+					</p>
+				</section>
+
+				<section>
+					<p><i>Emily intro</i></p> 
+					<p>Use of global positioning system (GPS) technology has become a standard method of data collection in geographical epidemiology and public health studies.</p>
+				</section>
+
+				<section> 
+					<p>However, in dense urban environments, GPS measurements are highly prone to error as signals bounce off large buildings and other structures.</p>
+				</section>
+
+				<section> 
+					<p>Formally defined as multipath error, these reflections increase the distance that the GPS signal must travel to reach the receiver—causing miscalculations in position.</p>
+				</section>
+
+				<section> 
+					<p>Multipath problems can result in locations that seemingly wander or jump as the signal is dropped and regained.</p>
+				</section>
+
+				<section> 
+					<img data-src="img/errordiagram.jpg" alt="error diagram">
+				</section>
+
+				<section> 
+					<p>Although the error associated with these split second delays may seem negligible, the multipath phenomena can substantially impact positional accuracy and tracking measurements.</p>
+				</section>
+				<section> 
+					<p>In order to evaluate the associations between urban density and GPS positional accuracy we used data from the New York City (NYC) Taxi and Limousine Commission containing information on the approximately 175 million NYC yellowcab taxi trips that occurred in 2013.</p>
+				</section>
+
+				<section> 
+					<p>We hypothesized that higher building density would be positively associated with errors in accuracy.</p>
+					<p><i>note: switch to Danny</i></p>
+				</section>
+
+				<section> 
+					<p>My research group, <a href='http://beh.columbia.edu/' target='_blank'>the Built Environment and Health Project</a> has been using and seeing GPS and acceloremetry (sp?) data emerging in many health-related research studies.</p>
+				</section>
+
+				<section> 
+					<p>We've noticed a lot of error in areas of high structural building density. So we've been sending students out on structured walks to better assess how the built environment influences GPS signal.</p>
+				</section>
+
+				<section> 
+					<p>In two slides, we'll see two walks down two different streets in NYC (Bronx and Midtown Manhattan).</p>
+				</section>				
+
+				<section> 
+					<p>The two students are walking together each carrying two <a href='http://usglobalsat.com/p-25-dg-100-gpsdata-logger.aspx' target='_blank'>DG-100 GPS</a> devices and the <a href='http://runkeeper.com/'>RunKeeper</a> app on their smartphones.</p>
+
+					<img data-src="img/dg100.jpg" alt="gps map">
+				</section>
+
+				<section> 
+					<img data-src="img/gps_map_v02.png" alt="gps map">
+				</section>
+
+				<section> 
+					<p>If researchers were assessing walking or traveled distance by using the raw GPS data they could potentially overestimate distance traveled by 3 times in areas of high multipath error.</p>
+				</section>	
 
 				<section data-markdown="section-1.md"  
          				data-separator="^\n\n\n"  
@@ -47,12 +113,12 @@
          				data-separator-notes="^Note:"  
          				data-charset="iso-8859-15">
 				</section>
-				<section data-markdown="section-emily-1.md"  
+<!-- 				<section data-markdown="section-emily-1.md"  
          				data-separator="^\n\n\n"  
          				data-separator-vertical="^\n\n"  
          				data-separator-notes="^Note:"  
          				data-charset="iso-8859-15">
-				</section>
+				</section> -->
 				<section data-markdown="section-2.md"  
          				data-separator="^\n\n\n"  
          				data-separator-vertical="^\n\n"  
