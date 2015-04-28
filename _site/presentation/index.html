@@ -48,8 +48,9 @@
 					</p>
 				</section>
 
-				<section>
-					<p><i>Emilie intro</i></p> 
+				<!-- EMILIE's INTRO SECTION -->
+
+				<section data-background="#dddddd"> 
 					<p>Use of global positioning system (GPS) technology has become a standard method of data collection in geographical epidemiology and public health studies.</p>
 				</section>
 
@@ -66,6 +67,7 @@
 				</section>
 
 				<section> 
+					<h2>Multipath Error</h2>
 					<img data-src="img/errordiagram.jpg" alt="error diagram">
 				</section>
 
@@ -78,11 +80,12 @@
 
 				<section> 
 					<p>We hypothesized that higher building density would be positively associated with errors in accuracy.</p>
-					<p><i>note: switch to Danny</i></p>
 				</section>
 
-				<section> 
-					<p>My research group, <a href='http://beh.columbia.edu/' target='_blank'>the Built Environment and Health Project</a> has been using and seeing GPS and acceloremetry (sp?) data emerging in many health-related research studies.</p>
+				<!-- DANNY'S SECTION -->
+
+				<section data-background="#dddddd"> 
+					<p>My research group, <a href='http://beh.columbia.edu/' target='_blank'>the Built Environment and Health Project</a> has been using and seeing GPS and accelerometry data emerging in many health-related research studies.</p>
 				</section>
 
 				<section> 
@@ -90,7 +93,7 @@
 				</section>
 
 				<section> 
-					<p>In two slides, we'll see two walks down two different streets (with low and high built density) in NYC (Bronx and Midtown Manhattan).</p>
+					<p>In two slides, we'll see two walks down two different streets (one with low and one with high built density) in NYC (Bronx and Midtown Manhattan).</p>
 				</section>				
 
 				<section> 
@@ -104,30 +107,35 @@
 				</section>
 
 				<section> 
-					<p>If researchers were assessing walking or traveled distance by using the raw GPS data they could potentially overestimate distance traveled by 3 times in areas of high multipath error.</p>
+					<p>If researchers were assessing walking or traveled distance by using the raw un-processed GPS data they could potentially overestimate distance traveled in areas of high multipath error.</p>
 				</section>	
 
 				<section> 
-					<p>We've sent students on about 40 different walks stratified by the upper and lower quartiles of <strong>distributed building height</strong> (explained in later slides) and are planning on putting on some white paper type stuff providing recommendations on using GPS data for public health research and how you might want to use some GPS cleaning/snapping to streets methods.</p>
+					<p>We've sent students on about 40 different walks stratified by the upper and lower quartiles of <strong>distributed building height</strong> (explained in later slides) and are planning on putting out some documentation providing recommendations on using GPS data for public health research and how folks should plan on using some GPS cleaning/snapping methods.</p>
 				</section>
 
 				<section> 
-					<p>The Taxi pickup and dropoff GPS data appeared to have the same error. So it seemed worthwhile and exciting to investigate it.</p>
+					<p>The Taxi pickup and dropoff GPS data appeared to have the same error.</p>
+				</section>
+
+				<section> 
+					<p>So it seemed worthwhile and exciting to investigate it and potentially our REDS group's analysis to guide further research.</p>
 				</section>
 
 				<section> 
 					<p><small>A map of all dropoff and pickup GPS points in 2013 (starts of trips in blue and the ends in orange on this map:) <a href='https://www.mapbox.com/blog/nyc-taxi/' target='_blank'>New York City taxi trips - Eric Fisher, Mapbox</a>. Note points in water and over where buildings are.</small></p>
-					<iframe width="100%" height="500px" frameBorder="0" src="https://a.tiles.mapbox.com/v3/enf.ij1c2o4h.html?secure"></iframe></p>
+					<iframe width="100%" height="500px" frameBorder="0" src="https://a.tiles.mapbox.com/v3/enf.ij1c2o4h.html?secure"></iframe>
 				</section>
 
-				<section> 
+				<section>
+					<h4>Taxi Pickups and Dropoffs by Census Block</h4>
+					<iframe width='100%' height='550' frameborder='0' src='https://dms2203.cartodb.com/viz/7631a2b4-ed1e-11e4-8d21-0e018d66dc29/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe> 
 					<p><small><a href='http://nbviewer.ipython.org/github/nygeog/taxi/blob/master/tasks/201504_stat4701/03-csv-xy-intersect.ipynb' target='_blank'>iPython notebook to intersect the Census Blocks and Taxi Pickups and Dropoffs</a>, <a href='http://nbviewer.ipython.org/github/nygeog/taxi/blob/master/tasks/201504_stat4701/04-ogr-shp-to-csv.ipynb' target='_blank'>shapefile to csv (GDAL/OGR)</a>, <a href='http://nbviewer.ipython.org/github/nygeog/taxi/blob/master/tasks/201504_stat4701/05-combine-tables.ipynb' target='_blank'>combine tables </a>, and <a href='http://nbviewer.ipython.org/github/nygeog/taxi/blob/master/tasks/201504_stat4701/06-concat-master.ipynb' target='_blank'> concat master table.</a>
 					</small></p>
-					<iframe width='100%' height='650' frameborder='0' src='https://dms2203.cartodb.com/viz/7631a2b4-ed1e-11e4-8d21-0e018d66dc29/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 				</section>
 
 				<section> 
-					<p>So our research question in plain english is: Can we predict multipath error in taxi pickup and dropoff GPS data using our <strong>Distributed Building Height</strong> measure?</p>
+					<p>We hypothesized that higher building density (<strong>Distributed Building Height</strong>) would be positively associated with errors in accuracy.</p>
 				</section>
 
 				<section>
@@ -154,6 +162,7 @@
 					<small><pre><code>convert -delay 200 -loop 0 img/png/*.png img/gif/dist_bldg_hght_ani.gif #imagemagick-png to gif code</code></pre></small>
 					<img data-src="img/dist_bldg_hght_ani.gif" alt="dist_bldg_hght_ani">
 				</section>
+				<!-- Distributed Building Height -->
 				<section> 
 					<iframe width='100%' height='650' frameborder='0' src='https://dms2203.cartodb.com/viz/ac88b602-ed20-11e4-aad3-0e018d66dc29/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 				</section>
@@ -162,9 +171,11 @@
 				<section> 
 					<iframe width='100%' height='650' frameborder='0' src='https://dms2203.cartodb.com/viz/717d07aa-ed22-11e4-95d1-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 				</section>
+				<!-- Standard Deviation Distance to Roadbed -->
 				<section>
 					<iframe width='100%' height='650' frameborder='0' src='https://dms2203.cartodb.com/viz/c0aa7254-ed22-11e4-8203-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 				</section>
+				<!-- Percent Block Covered with Building Footprint -->
 				<section> 
 					<iframe width='100%' height='650' frameborder='0' src='https://dms2203.cartodb.com/viz/afdd200a-ed5b-11e4-8727-0e018d66dc29/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 				</section>
