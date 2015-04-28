@@ -1,12 +1,3 @@
-##Probability plots
-![gps](images/qqplots.jpg)
-
-
-
-#Much more exploratory code on [github](https://github.com/stat4701-edav-gps/taxi-analysis/tree/master/EDA)
-
-
-
 ##Initial regression models
 
 	dfb2$mavgbrdist <- dfb2$avgbrdist*0.3048 
