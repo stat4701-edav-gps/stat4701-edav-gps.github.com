@@ -162,10 +162,47 @@
 				<section> 
 					<iframe width='100%' height='650' frameborder='0' src='https://dms2203.cartodb.com/viz/717d07aa-ed22-11e4-95d1-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 				</section>
+				<section> 
+					<iframe width='100%' height='650' frameborder='0' src='https://dms2203.cartodb.com/viz/afdd200a-ed5b-11e4-8727-0e018d66dc29/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+				</section>
 
-
-
-
+				<section> 
+					<img data-src="img/bigquery_logo.png" alt="bigquery logo">
+				</section>
+				<section> 
+					<img data-src="img/bigquery_results_taxi.png" alt="bigquery results taxi">
+				</section>
+				<section>
+					<h2>Variables</h2>
+					<small><ul>
+						<li>tuid - Unique Taxi trip ID.</li>
+						<li>dist_roadbed - distance to nearest roadbed, 0 is in roadbed.</li>
+						<li>geoid - Unique Census Block ID.</li>
+						<li>dist_bldg_hght - Distributed building height (meters), our predictor for causing error.</li>
+						<li>type - p: pickup, d: dropoff location</li>
+					</ul></small>
+				</section>
+				<section> 
+					<img data-src="img/bigquery_results_blocks.png" alt="bigquery results blocks">
+				</section>
+				<section>
+					<h2>Variables</h2>
+					<small><ul>
+						<li>geoid - Unique Census Block ID</li>
+						<li>avgbrdist - Average Distance from Roadbed for taxi pickup and dropoff observations for 2013 in Census Block.</li>
+						<li>medbrdist - Median Distance from Roadbed for taxi pickup and dropoff observations for 2013 in Census Block.</li> 
+						<li>stdbrdist - Standard Deviation of Distance from Roadbed for taxi pickup and dropoff observations for 2013 in Census Block.</li> 
+						<li>count - Count taxi pickup and dropoff observations for 2013 in Census Block.</li> 
+						<li>areasqft - Area of Census Block in square feet.</li> 
+						<li>countbldg - Count of Buildings in Census Block.</li>  
+						<li>bldgareaft - Building footprint area in square feet in Census Block.</li>
+						<li>pctcbbldg - Percent Census Block covered by building footprint.</li>
+						<li>dist_bldg_hght - Distributed building height (meters), our predictor for causing error.</li>
+					</ul></small>
+				</section>
+				<section> 
+					<img data-src="img/bigquery_console.png" alt="bigquery console">
+				</section>
 <!-- 				<section data-markdown="section-1.md"  
          				data-separator="^\n\n\n"  
          				data-separator-vertical="^\n\n"  
