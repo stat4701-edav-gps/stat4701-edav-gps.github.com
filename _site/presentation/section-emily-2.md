@@ -1,4 +1,4 @@
-##Two analytic approaches
+<!--##Two analytic approaches
 * Individual geographical points 
     * latitude and longitude of each pickup and dropoff
 * Areal units 
@@ -199,13 +199,13 @@ Step 1: Read in census block (or zip code) shapefile from the  [NYC Department o
 
 
 
-<!--####Highly skewed distributions (histograms)
+####Highly skewed distributions (histograms)
 ![gps](images/histDBH.png)
 
 
 
 ####Highly skewed distributions (histograms)
-![gps](images/Dist%20DR.png)
+![gps](images/Dist%20DR.png)-->
 
 
 
@@ -239,4 +239,4 @@ Step 1: Read in census block (or zip code) shapefile from the  [NYC Department o
 
 
 
-##Next steps in the analysis, try to model the points!-->
+##Next steps in the analysis, try to model the points!

@@ -199,7 +199,7 @@ Step 1: Read in census block (or zip code) shapefile from the  [NYC Department o
 
 
 
-####Highly skewed distributions (histograms)
+<!--####Highly skewed distributions (histograms)
 ![gps](images/histDBH.png)
 
 
@@ -239,4 +239,4 @@ Step 1: Read in census block (or zip code) shapefile from the  [NYC Department o
 
 
 
-##Next steps in the analysis, try to model the points!
+##Next steps in the analysis, try to model the points!-->
