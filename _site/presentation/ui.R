@@ -12,7 +12,8 @@ shinyUI(fluidPage(
   ,column(3,
       radioButtons("radio", label = h3("Check Value"),
         choices = list("Pickup" = "p", 
-           "Drop-off" = "d"),
+           "Drop-off" = "d",
+           "Both" = "b"),
         selected = "d"))
 ,    column(3, 
       sliderInput("Slider", label = h3("Building Height"),
