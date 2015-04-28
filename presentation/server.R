@@ -12,9 +12,15 @@ shinyServer(function(input, output) {
 
   output$plot1 <- renderPlot({
 
-    df2 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT<=input$Slider[2] & df$DIST_BLDG_HGHT>=input$Slider[1]
- & df$TYPE==input$radio & df$DIST_ROADBED<=input$Slider2[2] & df$DIST_ROADBED>=input$Slider2[1] )
-#& df$GEOID>=input$geoid[1] & df$GEOID<=input$geoid[2]
+  if(input$radio=='b'){
+      df2 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT<=input$Slider[2] & df$DIST_BLDG_HGHT>=input$Slider[1]
+                    & df$DIST_ROADBED<=input$Slider2[2] & df$DIST_ROADBED>=input$Slider2[1] )
+   } else {
+    df2 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT<=input$Slider[2] 
+           & df$DIST_BLDG_HGHT>=input$Slider[1] & df$TYPE==input$radio & df$DIST_ROADBED<=input$Slider2[2] 
+           & df$DIST_ROADBED>=input$Slider2[1] )
+   }
+ 
     
     #df2 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT==input$Slider )
     p <- ggplot(df2)+
@@ -33,8 +39,14 @@ shinyServer(function(input, output) {
 
 output$plot2 <- renderPlot({
 
-    df3 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT<=input$Slider[2] & df$DIST_BLDG_HGHT>=input$Slider[1] 
-          & df$TYPE==input$radio & df$DIST_ROADBED<=input$Slider2[2] & df$DIST_ROADBED>=input$Slider2[1] & df$DIST_ROADBED/df$DIST_BLDG_HGHT <1 )
+if(input$radio=='b'){
+      df3 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT<=input$Slider[2] & df$DIST_BLDG_HGHT>=input$Slider[1]
+                    & df$DIST_ROADBED<=input$Slider2[2] & df$DIST_ROADBED>=input$Slider2[1] & df$DIST_ROADBED/df$DIST_BLDG_HGHT <1 )
+   } else {
+    df3 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT<=input$Slider[2] 
+           & df$DIST_BLDG_HGHT>=input$Slider[1] & df$TYPE==input$radio & df$DIST_ROADBED<=input$Slider2[2] 
+           & df$DIST_ROADBED>=input$Slider2[1] & df$DIST_ROADBED/df$DIST_BLDG_HGHT <1 )
+   }
     
 
     p2 <- ggplot(df3, aes( x=DIST_BLDG_HGHT,y=DIST_ROADBED)) + geom_line() + ylab('Distance from Road Bed') +
@@ -46,8 +58,15 @@ output$plot2 <- renderPlot({
 
 output$plot3 <- renderPlot({
 
-    df4 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT<=input$Slider[2] & df$DIST_BLDG_HGHT>=input$Slider[1] 
-           & df$TYPE==input$radio & df$DIST_ROADBED<=input$Slider2[2] & df$DIST_ROADBED>=input$Slider2[1] )
+  if(input$radio=='b'){
+      df4 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT<=input$Slider[2] & df$DIST_BLDG_HGHT>=input$Slider[1]
+                    & df$DIST_ROADBED<=input$Slider2[2] & df$DIST_ROADBED>=input$Slider2[1] )
+   } else {
+    df4 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT<=input$Slider[2] 
+           & df$DIST_BLDG_HGHT>=input$Slider[1] & df$TYPE==input$radio & df$DIST_ROADBED<=input$Slider2[2] 
+           & df$DIST_ROADBED>=input$Slider2[1] )
+   }
+ 
     
 
  p3 <- ggplot(df4, aes( x=DIST_BLDG_HGHT))  + geom_histogram(breaks=seq(input$Slider[1], input$Slider[2], by = 5), 
@@ -62,8 +81,14 @@ output$plot3 <- renderPlot({
 
 output$plot4 <- renderPlot({
 
-    df5 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT<=input$Slider[2] & df$DIST_BLDG_HGHT>=input$Slider[1] 
-           & df$TYPE==input$radio & df$DIST_ROADBED<=input$Slider2[2] & df$DIST_ROADBED>=input$Slider2[1] )
+  if(input$radio=='b'){
+      df5 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT<=input$Slider[2] & df$DIST_BLDG_HGHT>=input$Slider[1]
+                    & df$DIST_ROADBED<=input$Slider2[2] & df$DIST_ROADBED>=input$Slider2[1] )
+   } else {
+    df5 <- subset(df,df$BORO==input$boro & df$DIST_BLDG_HGHT<=input$Slider[2] 
+           & df$DIST_BLDG_HGHT>=input$Slider[1] & df$TYPE==input$radio & df$DIST_ROADBED<=input$Slider2[2] 
+           & df$DIST_ROADBED>=input$Slider2[1] )
+   }
     
 
  p4 <- ggplot(df5, aes( x=DIST_ROADBED))  + geom_histogram(breaks=seq(input$Slider2[1], input$Slider2[2], by = 5), 
