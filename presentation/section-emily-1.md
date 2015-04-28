@@ -1,4 +1,8 @@
-#Two Analytic Approaches
+
+<!--Please try and use ## (h2) for titles on the slides as the # (which is h1)-->
+
+
+##Two Analytic Approaches
 * Individual geographical points 
     * latitude and longitude of each pickup and dropoff
 * Aerial units 
@@ -8,7 +12,7 @@
 
 
 
-#Aerial data are subject to many analytic difficulties 
+##Aerial data are subject to many analytic difficulties 
 * Weird geographic categorizations (i.e. congressional districts)
 * Spatial autocorrelation
     * Idea that things next to each other are likely to be more similar than things far apart from each other
@@ -18,7 +22,7 @@
 
 
 
-#How can we overcome this problem?
+##How can we overcome this problem?
 * If we are considering lat/long points then we can weight them by decreasing levels of distance
 * If we are considering blocks then we can think about them as neighbors, applying a few different definitions 
 
