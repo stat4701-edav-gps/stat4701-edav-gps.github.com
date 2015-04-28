@@ -16,7 +16,7 @@ shinyUI(fluidPage(
         selected = "d"))
 ,    column(3, 
       sliderInput("Slider", label = h3("Building Height"),
-        min = 0, max = 500, value = 50)
+        min = 0, max = 500, value = c(0,50))
       )  
 ,    column(3, 
       sliderInput("Slider2", label = h3("Distance from Road Bed"),
@@ -27,7 +27,12 @@ shinyUI(fluidPage(
  
 mainPanel(
    p("Bld Ht vs Road Bed Distance"),
-   plotOutput('plot1')
+   plotOutput('plot1'),
+p("Road Bed Distance/Building Height <1")
+  ,plotOutput('plot2')
+  ,plotOutput('plot3')
+  ,plotOutput('plot4')
+
   )
 
 ))
