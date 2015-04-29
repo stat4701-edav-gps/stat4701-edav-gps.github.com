@@ -16,7 +16,3 @@
 
 ####Every 1-unit increase in distributed building height was associated with approximately a 17% increase in distance from roadbed
 0.17, 95% CI = 0.15 \- 0.19, Adjusted R-squared 0.0089
-
-
-
-
